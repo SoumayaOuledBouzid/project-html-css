@@ -1,0 +1,245 @@
+
+/* start header */
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .resoudre-float {
+    overflow: hidden;
+    }
+    header {
+        padding: 10px 0;
+        background-color: grey;
+        
+    }
+
+    header .header-logo {
+        width: 250px;
+        display: inline-block;
+        float: left;
+        padding-top: 5px;
+    }
+    header nav {
+        float: right;
+    }
+    header nav ul {
+        list-style: none;
+    }
+    header nav ul li {
+        display:inline-block;
+        padding: 10px;
+    }
+    header nav ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    header .header-form {
+        padding: 10px 30px;
+        float: right;
+    }
+    /* end header */
+    /*start aside*/
+    aside {
+        padding: 10px 0;
+        background-color:rgba(128, 128, 128, 0.394);
+        border:1px solid #000;
+        border-radius:5px;
+        box-shadow:0px 0px 5px #000;  
+    }
+    aside.about .top {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        display: table;
+        margin: 0 auto 100px;
+        padding-bottom:10px;
+        color: rgb(180, 46, 46);
+    }
+    aside.about .right {
+        font-size: 35px;
+        float:right;
+        width: 50%;
+        padding-right: 50px;
+        text-align: justify;
+    }
+    aside figure figcaption{
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /*start section audio video*/
+    section .audio-video {
+        background-color: gray;
+        padding:10px;
+        border:1px solid #000;
+        border-radius:5px;
+        box-shadow:0px 0px 5px #000;
+        padding: 50px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-image: url(./images/images\ \(3\).jfif);
+        position: relative;
+        }
+    section.audio-video::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;    
+        font-size: 30px;
+        background: rgb(130 126 126 / 52%);
+    }
+        
+    section .title, section.Resume h2, footer.contact .footer-top h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        display: table;
+        margin: 0 auto 100px;
+        padding-bottom: 10px;
+        color: rgb(159, 54, 54);
+    }
+    section.audio video {
+        float: right;
+        width: 50%;
+    }
+    /*start section table*/
+    section.prices{
+        background-color:rgba(128, 128, 128, 0.226);
+        border:1px solid #0000006a;
+        border-radius:5px;
+        box-shadow:0px 0px 5px #000;
+    }
+    section.prices table {
+        border:2px solid #000;
+        width: 400px;
+        height: 300px;
+        text-align: center; 
+        background-color: rgba(242, 203, 226, 0.472);
+        font-size: 20px;
+    }
+
+    section.prices table caption {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+        color: rgb(52, 202, 213);
+    }
+    section.prices table thead {
+        color: blueviolet;
+        font-size: 31px;
+    }
+    /*end section table*/
+    /*start section resume*/
+    section.Resume {
+        background-color: rgba(128, 128, 128, 0.226);
+        width: 100%;
+        border:1px solid #000;
+        border-radius:5px;
+        box-shadow:0px 0px 5px #000;
+        position: relative;
+        }
+    section.Resume h2 {
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    section.Resume .resume-img {
+        float: left;
+        width: 250px;
+        padding: 0 45px 45px 0;
+        position: relative;
+        height: 250px;
+        z-index: 0;
+    }
+    section.Resume .resume-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 23px;
+        border: 10px solid black; 
+    }  
+    section.Resume .resume-img::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        border: 10px solid black;
+        left: 30px;
+        bottom: 30px;
+        z-index: -1;
+        top: 30px;
+        width: 170px;
+        height: 170px;
+        border-radius: 23px;
+        z-index: -1;
+    }
+    section.Resume p { 
+        font-size: 20px;
+        line-height :50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: gray;
+        text-align: center;
+    }
+    /*end section resume*/
+    /*start footer*/
+    footer.contact  {
+        background-color: rgb(0, 0, 0);
+        border:1px solid #000;
+        border-radius:5px;
+        box-shadow:0px 0px 5px #000;
+    }
+    footer.contact .footer-top h2 {
+        font-size: 40px;
+        padding-top: 20px;
+        color: rgb(65, 18, 18);
+    }
+    footer.contact .contact-us p {
+        font-size: 25px;
+        font-weight: bold;
+        color:blanchedalmond;
+        text-align: left;
+        padding: 10px 50px;
+    }
+    footer.contact .contact-us p a {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    footer.contact .logo-footer {
+    float:right;
+    width: 50%;
+    padding-right: 50px;
+    text-align: justify;
+    }
+    footer.contact .footer-bottom {
+        text-align: justify;
+    }
+    footer.contact .footer-bottom h3 {
+        font-size: 40px;
+        font-weight: bold;
+        color: beige;
+        font-style: italic;
+        padding:5px 0;
+    }
+    footer.contact .footer-bottom a {
+        font-size: 30px;
+        padding: 10px 10px;
+        color:blue;
+    }
+    /*end footer*/
